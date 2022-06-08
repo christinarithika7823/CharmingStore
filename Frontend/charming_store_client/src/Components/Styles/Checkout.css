@@ -1,0 +1,153 @@
+#prod {
+	height: 350px;
+	width: 300px;
+	border-radius: 12px;
+	margin-top: 30px;
+	border: 2px solid transparent;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#summary {
+	height: 1000px;
+	width: 57%;
+	background-color: rgb(238, 190, 102);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	border-radius: 12px;
+	border: 2px solid transparent;
+}
+#summary h1 {
+	margin-left: 300px;
+}
+#cards {
+	margin-top: -20px;
+	display: flex;
+	width: 1510px;
+	border: 2px solid transparent;
+}
+#smallcards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 43%;
+	gap: 5px;
+}
+#dets {
+	margin-top: -20px;
+	line-height: 40px;
+	font-size: 16px;
+}
+#names {
+	text-align: center;
+	line-height: 20px;
+}
+#row {
+	margin-top: 40px;
+	font-size: 18px;
+	font-weight: 500;
+}
+#det1 {
+	margin-top: -30px;
+	margin-left: 15px;
+	font-size: 18px;
+	font-weight: 500;
+}
+#quantity {
+	margin-top: -20px;
+	margin-left: 15px;
+	font-size: 18px;
+	font-weight: 500;
+}
+#image {
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+#image img {
+	border-radius: 12px;
+}
+#reviewtit {
+	margin-left: 180px;
+}
+#checktit {
+	margin-left: 650px;
+}
+#checktot {
+	font-size: 25px;
+	display: flex;
+	width: 80%;
+	font-weight: 600;
+	height: 30px;
+	justify-content: space-between;
+	border: 1px solid transparent;
+	margin-left: 10%;
+}
+#checkgst {
+	font-size: 25px;
+	display: flex;
+	width: 80%;
+	font-weight: 600;
+	height: 30px;
+	margin-top: 20px;
+	justify-content: space-between;
+	border: 1px solid transparent;
+	margin-left: 10%;
+}
+#checktotal {
+	font-size: 40px;
+	display: flex;
+	width: 80%;
+	font-weight: 600;
+	height: 50px;
+	margin-top: 20px;
+	justify-content: space-between;
+	border: 1px solid transparent;
+	margin-left: 10%;
+}
+
+#not {
+	margin-left: 280px;
+	font-size: 25px;
+	font-weight: 700;
+}
+.stot {
+	margin-top: -5px;
+}
+.stot1 {
+	margin-top: 0px;
+	font-size: 35px;
+	font-weight: 600;
+}
+/* #add {
+	margin-top: 20px;
+	margin-left: 60px;
+} */
+
+#address {
+	width: 100%;
+	border: 1px solid transparent;
+	height: 690px;
+}
+
+#address label {
+	font-size: 25px;
+	font-weight: 700;
+	margin-left: 200px;
+}
+#address input {
+	height: 35px;
+	width: 500px;
+	font-size: 25px;
+	margin-left: 200px;
+	border-radius: 10px;
+}
+#payment {
+	height: 30px;
+	width: 300px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 10px;
+	background-color: midnightblue;
+	color: white;
+	margin-top: 20px;
+	margin-left: 300px;
+}
