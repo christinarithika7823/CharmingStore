@@ -24,7 +24,7 @@ export const ProductPage = () => {
 		]
 	);
 	const getdatas = () => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getproductsone/${id}`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getproductsone/${id}`).then((res) => {
 			// setDatas([
 			// 	res.data
 			// ]);

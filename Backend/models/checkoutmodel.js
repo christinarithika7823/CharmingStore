@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const checkoutSchema = new mongoose.Schema({
-	id         : { type: Number },
+	id         : { type: String },
 	name       : { type: String },
 	price      : { type: Number },
 	discount   : { type: String },

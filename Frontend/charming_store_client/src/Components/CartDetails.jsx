@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Styles/HomePage.css";
 
 export const CartDetails = ({ name, price, discount, image, categories, reviews, rating, sizes, id }) => {
+	// console.log(id,typeof(id),"id type ")
 	const [
 		rate,
 		setRate
@@ -12,7 +13,8 @@ export const CartDetails = ({ name, price, discount, image, categories, reviews,
 	const newQty = localStorage.getItem("newrate");
 	const handleCheckout = () => {
 		// alert("Added To Cart!");
-		if (newQty > rate || newQty < rate) {
+		console.log(newQty,rate,"quantity values")
+		if (newQty!==null && (newQty > rate || newQty < rate)) {
 			const payload = {
 				id         : id,
 				name       : name,
@@ -26,9 +28,9 @@ export const CartDetails = ({ name, price, discount, image, categories, reviews,
 				qty        : rate
 			};
 			axios
-				.put(`https://charming-ecommerce.herokuapp.com/getcheckoutproduct/${payload.id}`, payload)
+				.put(`https://charmingstore.onrender.com/getcheckoutproduct/${payload.id}`, payload)
 				.then((res) => {
-					console.log(res.data);
+					console.log(res.data,"yd8oswy8ou8");
 					// localStorage.setItem("newrate", res.data.qty);
 				});
 		}
@@ -45,8 +47,8 @@ export const CartDetails = ({ name, price, discount, image, categories, reviews,
 				sizes      : sizes,
 				qty        : rate
 			};
-			axios.post(`https://charming-ecommerce.herokuapp.com/postcheckout`, payload).then((res) => {
-				console.log(res.data);
+			axios.post(`https://charmingstore.onrender.com/postcheckout`, payload).then((res) => {
+				console.log(res.data,"p9e89peu9po");
 				localStorage.setItem("newrate", res.data.qty);
 			});
 		}

@@ -22,7 +22,7 @@ export const HomePage = () => {
 	}, []);
 
 	const getdatas = () => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getproducts`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getproducts`).then((res) => {
 			console.log(res);
 			// setProd([
 			// 	...res.data
@@ -32,7 +32,10 @@ export const HomePage = () => {
 					...res.data
 				])
 			);
-		});
+		})
+		.catch((res)=>{
+           console.log(res,"error")
+		})
 	};
 
 	return (

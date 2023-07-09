@@ -15,7 +15,7 @@ export const Signup = () => {
 		};
 
 		axios
-			.post("https://charming-ecommerce.herokuapp.com/signup", payload)
+			.post("https://charmingstore.onrender.com/signup", payload)
 			.then((res) => {
 				console.log("Signup Successfull", res.data);
 				navigate("/signin");

@@ -26,7 +26,7 @@ export const IndividualProductDetails = ({
 			rating     : rating,
 			sizes      : sizes
 		};
-		axios.post("https://charming-ecommerce.herokuapp.com/postcart", payload).then((res) => {
+		axios.post("https://charmingstore.onrender.com/postcart", payload).then((res) => {
 			console.log(res.data);
 		});
 	};

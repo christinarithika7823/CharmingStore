@@ -12,7 +12,7 @@ export const CartPage = () => {
 	] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getcart`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getcart`).then((res) => {
 			setInfo([
 				...res.data
 			]);

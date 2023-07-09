@@ -26,7 +26,7 @@ export const CategoryPage = () => {
 	);
 
 	const getcatdatas = () => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getproducts`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getproducts`).then((res) => {
 			const data = res.data.filter((el) => {
 				return el.categories === types;
 			});
@@ -42,7 +42,7 @@ export const CategoryPage = () => {
 	};
 	// http://localhost:8080/products?_sort=discount&_order=asc
 	const getSortedData = (type, order) => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getproducts?_sort=${type}&_order=${order}`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getproducts?_sort=${type}&_order=${order}`).then((res) => {
 			const data = res.data.filter((el) => {
 				return el.categories === types;
 			});

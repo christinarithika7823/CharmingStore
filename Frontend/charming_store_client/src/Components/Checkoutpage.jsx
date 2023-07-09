@@ -12,11 +12,15 @@ export const Checkoutpage = () => {
 	] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getcheckout`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getcheckout`).then((res) => {
+			console.log(res,"checkout products")
 			setInfo([
 				...res.data
 			]);
-		});
+		})
+		.catch((res)=>{
+           console.log(res,"error")
+		})
 	}, []);
 	const rate = localStorage.getItem("rate");
 	return (

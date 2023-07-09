@@ -20,7 +20,7 @@ export const ProductDetails = ({ name, price, discount, image, categories, revie
 			sizes      : sizes
 		};
 		console.log(payload, "oojdfhkj");
-		axios.post("https://charming-ecommerce.herokuapp.com/postcart", payload).then((res) => {
+		axios.post("https://charmingstore.onrender.com/postcart", payload).then((res) => {
 			console.log(res.data);
 		});
 	};

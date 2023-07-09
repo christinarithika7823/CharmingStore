@@ -14,7 +14,7 @@ export const PaymentsandOrderPage = () => {
 		alert("Payment Successfull!! Your Order Will Be Delivered Soon...");
 	};
 	useEffect(() => {
-		axios.get(`https://charming-ecommerce.herokuapp.com/getcheckout`).then((res) => {
+		axios.get(`https://charmingstore.onrender.com/getcheckout`).then((res) => {
 			setValues([
 				...res.data
 			]);
